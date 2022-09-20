@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css">
+    <title>Get in Touch</title>
+</head>
+
+<body class="bg-dark vh-100 d-flex justify-content-center align-items-center">
+    <div class="container mx-3 p-5 bg-primary rounded" style="max-width: 500px;">
+        <h1 class="mb-4 text-white text-center border-bottom pb-3">Get in Touch &nbsp;<i class="fa-solid fa-handshake"></i></h1>
+        <form action="/" method="POST">
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label fw-bold">Email</label>
+                <input name="email" type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" autocomplete="off"
+                    required>
+            </div>
+            <div class="mb-3">
+                <label for="exampleFormControlTextarea1" class="form-label fw-bold">Message</label>
+                <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="4"
+                    placeholder="Type your message..." autocomplete="off" style="resize: none;" required></textarea>
+            </div>
+            <div class="d-grid">
+                <button type="submit" class="btn btn-dark">Send &nbsp;<i class="fa-solid fa-paper-plane"></i></button>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
