@@ -1,22 +1,20 @@
 // Imports
 const express = require('express');
 const mongoose = require('mongoose');
-const path = require('path');
 const Message = require('./models/message');
-
-// Configuring Dotenv
-const dotenv = require('dotenv');
-dotenv.config({ path: path.resolve(__dirname, './.env') });
 
 // Initiating Express
 const app = express();
+
+// Configuring Dotenv
+require('dotenv').config({ path: "./.env" });
 
 // Connect to MongoDB
 const dbURI = process.env.MONGODB_URI;
 
 // Starting the Server based on Database Connectivity
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true })
-    .then(result => app.listen(process.env.PORT || 3000))
+    .then(result => app.listen(process.env.PORT))
     .catch(err => console.log(err));
 
 // Middlewares
