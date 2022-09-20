@@ -1,11 +1,12 @@
 // Imports
 const express = require('express');
 const mongoose = require('mongoose');
+const path = require('path');
 const Message = require('./models/message');
 
 // Configuring Dotenv
 const dotenv = require('dotenv');
-dotenv.config();
+dotenv.config({ path: path.resolve(__dirname, './.env') });
 
 // Initiating Express
 const app = express();
